@@ -10,7 +10,7 @@ const Months = ({ fruits, vegetables, months }) => {
   const [vegetablesMonths, setVegetablesMonths] = useState([]);
 
   const { selectedType } = useUxContext();
-
+  console.log(selectedType);
   useEffect(() => {
     let nouv = [];
     for (let i = 0; i < months.length; i++) {
