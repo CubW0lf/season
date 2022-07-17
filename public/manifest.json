@@ -1,0 +1,32 @@
+{
+  "theme_color": "#59C579",
+  "background_color": "#59C579",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "name": "Season Les fruits et l\u00e9gume de saison",
+  "short_name": "Season",
+  "description": "Trouvez les fruits et l\u00e9gumes de saison en fonction du mois courant",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
