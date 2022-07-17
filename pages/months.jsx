@@ -50,9 +50,7 @@ const Months = ({ fruits, vegetables, months }) => {
       </Head>
       <div className={styles.container}>
         {selectedType === "fruits" && fruitsMonths && fruitsMonths.map((m) => <Month month={m} key={m[0].num} />)}
-        {selectedType === "vegetables" &&
-          vegetablesMonths &&
-          vegetablesMonths.map((m) => <Month month={m} key={m[0].num} />)}
+        {selectedType === "legumes" && vegetablesMonths && vegetablesMonths.map((m) => <Month month={m} key={m[0].num} />)}
       </div>
     </>
   );
