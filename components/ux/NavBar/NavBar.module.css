@@ -1,0 +1,48 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    padding: 5vw 5vw 0 5vw;
+}
+
+.logo {
+    width: 5vw;
+}
+
+.months svg {
+    font-size: 5vh;
+    color: var(--white);
+}
+
+.container h1 {
+    color: var(--white);
+    font-family: var(--titleFont);
+    letter-spacing: 10px;
+    font-size: 5vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .9;
+}
+
+.current {
+    color: var(--primary) !important;
+    filter: drop-shadow(1px 1px 0 var(--white)) drop-shadow(-1px -1px 0 var(--white)) drop-shadow(1px -1px 0 var(--white)) drop-shadow(-1px 1px 0 var(--white));
+}
+
+@media screen and (min-width:1200px) {
+
+    .container {
+        height: 100px;
+        padding: 1vw;
+    }
+
+    .logo {
+        width: 1vw;
+    }
+
+}

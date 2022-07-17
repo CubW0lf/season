@@ -1,0 +1,75 @@
+.container {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 0;
+    z-index: 3;
+}
+
+.container svg {
+    font-size: 15vw;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.container .active {
+    color: var(--primary);
+    filter: drop-shadow(1px 1px 0 var(--white)) drop-shadow(-1px -1px 0 var(--white)) drop-shadow(1px -1px 0 var(--white)) drop-shadow(-1px 1px 0 var(--white));
+    opacity: 1;
+}
+
+.bring {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 50%) rotate(0);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    filter: drop-shadow(1px 1px 0 var(--body)) drop-shadow(-1px -1px 0 var(--body)) drop-shadow(1px -1px 0 var(--body)) drop-shadow(-1px 1px 0 var(--body));
+    transition: all .4s;
+}
+
+.selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 5vw 5vw 2vw 5vw;
+    background-color: var(--body);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transform: translateY(100%);
+    transition: all .4s;
+}
+
+.selector svg {
+    font-size: 15vw;
+    color: var(--white);
+    cursor: pointer;
+    opacity: .5;
+}
+
+.bringRotate {
+    transform: translate(-50%, -100%) rotate(180deg);
+    transition: all .4s;
+}
+
+.selectorVisible {
+    transform: translateY(0);
+    transition: all .4s;
+}
+
+@media screen and (min-width:1200px) {
+    .container svg {
+        font-size: 5vh;
+    }
+
+    .selector {
+        padding: 1vw;
+    }
+
+    .selector svg {
+        font-size: 4vh;
+    }
+}

@@ -1,0 +1,34 @@
+.container {
+    color: var(--white);
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 5vw;
+}
+
+.date {
+    font-size: 5vw;
+    font-family: var(--titleFont);
+}
+
+.info {
+    font-size: 6vw;
+    text-align: center;
+    font-family: var(--titleFont);
+}
+
+@media screen and (min-width:1200px) {
+    .container {
+        padding: 0 0 1vw 0;
+    }
+
+    .date {
+        font-size: 1vw;
+    }
+
+    .info {
+        font-size: 2vw;
+    }
+}
